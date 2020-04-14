@@ -94,11 +94,11 @@ header #toggle:after {
   right: -500px;
   width: 400px;
   height: 100vh;
-  background: rgba(54, 62, 85, 0.43);
+  background: rgba(54, 62, 85, 0.41);
   z-index: 1;
   display: grid;
   place-items: center;
-  transition: 1.6s;
+  transition: 0.5s;
 }
 
 #navigation.active {
@@ -176,4 +176,60 @@ header #toggle:after {
   text-decoration: none;
   border: 1px solid white;
   margin: 10px 0 0;
+}
+
+.sci li a:hover {
+  background: #fff;
+}
+
+.sci li a img {
+  max-width: 20px;
+  filter: invert(1);
+  mix-blend-mode: difference; /* => die icons werden invertiert (farbe)  */
+}
+
+/* #########    RESPONSIVE MAGIC   ############## */
+
+@media (max-width: 767px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .banner {
+    padding: 50px 30px ;
+  }
+
+  .banner h2 {
+    font-size: 1.8em;
+  }
+
+  .banner .content p,
+  .banner .content a {
+    font-size: 1em;
+  }
+
+  .banner .active {
+    transform: translateX(-250px);
+  }
+
+  #navigation {
+    width: 400px;
+  }
+
+  #navigation ul li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+
+  .sci { /** hiermit werden die Icons (face, link, etc.) mach unten verrschoben */
+    position: absolute;
+    bottom: 50px;
+    right: initial;
+    flex-direction: row;
+  }
+
+  .sci li a {
+    margin: initial;
+    margin-right: 10px;
+  }
 }
