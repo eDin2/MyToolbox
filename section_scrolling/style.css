@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .section {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+.container .section:nth-child(1) {
+    background: url(img/forest-5035798_1280.jpg);
+    background-size: cover;
+}
+
+.container .section:nth-child(2) {
+    background: url(img/japan-5021733_1280.jpg);
+    background-size: cover;
+}
+
+.container .section:nth-child(3) {
+    background: url(img/spring-4916430_1280.jpg);
+    background-size: cover;
+}
+
+.container .section:nth-child(4) {
+    background: url(img/moon-4919501_1280.jpg);
+    background-size: cover;
+}
+
+.container .section:nth-child(5) {
+    background: url(img/sunset-5033708_1280.jpg);
+    background-size: cover;
+}
+
+
